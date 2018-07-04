@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/action_reload"
+        android:icon="@drawable/ic_reload"
+        android:orderInCategory="101"
+        android:title="Tomar Foto"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="999"
+        android:title="Log out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="999"
+        android:title="Acerca de"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="never" />
+
+</menu>

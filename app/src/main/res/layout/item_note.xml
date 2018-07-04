@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Título de la nota"/>
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/title_text"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            tools:text="Contenido de la nota ..."/>
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/content_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="18 de Agosto"
+            app:relative_time_prefix="Creado "/>
+
+        <CheckBox
+            android:id="@+id/favorite_star"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_text"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:contentDescription="favorito"
+            android:text="Favorito"
+            android:textAlignment="textEnd"
+            android:tint="@android:color/darker_gray" />
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
